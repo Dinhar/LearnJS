@@ -34,3 +34,47 @@
 // arr.splice(-1, 0, 3, 4);
 
 // alert( arr ); // 1,2,3,4,5
+
+// let arr = ["t", "e", "s", "t"];
+
+// console.log( arr.slice(1, 3));
+// // e, s
+// console.log( arr.slice(-2));
+// // s, t
+
+// let arr = [1, 2];
+
+// console.log( arr.concat([3, 4]) ); // 1,2,3,4
+// console.log( arr.concat([3, 4], [5, 6]) ); //1,2,3,4,5,6
+// console.log( arr.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
+
+// let arr = [1, 2];
+// let arrayLike = {
+//     0: "что-то",
+//     length: 1
+// };
+
+// console.log( arr.concat(arrayLike) ); // 1,2,[object Object]
+
+// let arr = [1, 2];
+// let arrayLike = {
+//     0: "что-то",
+//     1: "еще что-то",
+//     [Symbol.isConcatSpreadable]: true,
+//     length: 2
+// };
+
+// console.log( arr.concat(arrayLike) ); // 1,2,что-то, еще что-то
+
+
+// arr.forEach(function(item, index, array) {
+//     // делать что-то с item
+// });
+
+// Вызов alert для каждого элемента
+// ["Bilbo", "Gandalf", "Nazgul"].forEach(console.log);
+
+// ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+//     console.log(`${item} имеет позицию ${index} в ${array}`);
+// });
+
